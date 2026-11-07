@@ -86,9 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       if (msg) msg.textContent = 'Sending…';
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      // Apps Script does not return CORS headers, so the browser cannot read
+      // its response. no-cors still allows this FormData POST to be submitted.
+      fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
         .then(() => {
-          if (msg) msg.textContent = 'Message sent — thank you.';
+          if (msg) msg.textContent = 'Message submitted — thank you. Delivery cannot be confirmed here.';
           form.reset();
           setTimeout(() => { if (msg) msg.textContent = ''; }, 5000);
         })
