@@ -383,13 +383,13 @@ body{
 .contact__info-row .v{ font-size: 1rem; }
 .contact__socials{ display: flex; gap: 14px; margin-top: 26px; }
 .contact__socials a{
-  width: 40px; height: 40px;
-  border: 1px solid var(--line-strong);
+  width: 24px; height: 24px;
   display: flex; align-items: center; justify-content: center;
-  transition: border-color .2s ease, color .2s ease;
+  transition: color .2s ease;
   color: var(--text-muted);
 }
-.contact__socials a:hover{ border-color: var(--teal); color: var(--teal); }
+.contact__socials a svg{ display: block; width: 20px; height: 20px; fill: currentColor; }
+.contact__socials a:hover{ color: var(--teal); }
 
 .form-field{ margin-bottom: 18px; }
 .form-field label{ display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
