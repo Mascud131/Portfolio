@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // its response. no-cors still allows this FormData POST to be submitted.
       fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
         .then(() => {
-          if (msg) msg.textContent = 'Message submitted — thank you. Delivery cannot be confirmed here.';
+          if (msg) msg.textContent = 'Message submitted — thank you.';
           form.reset();
           setTimeout(() => { if (msg) msg.textContent = ''; }, 5000);
         })
