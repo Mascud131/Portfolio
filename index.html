@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mascud — Computer Engineer &amp; UI/UX Designer</title>
+<meta name="description" content="Portfolio of Mascud — Computer Engineering graduate and UI/UX designer based in Istanbul." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <div class="wrap">
+      <a href="#home" class="nav__logo"><span class="dot"></span>MASCUD</a>
+      <ul class="nav__list" id="navList">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#capabilities" class="nav__link">Capabilities</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav__cta">Let's talk</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="hero__col">
+          <p class="hero__kicker"><span class="rule"></span>Portfolio — Istanbul, Türkiye</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="accent">Mascud</span><br />
+            a <span class="role-swap" id="roleSwap">Computer Engineer</span>
+          </h1>
+          <p class="hero__desc">
+            I graduated in Computer Engineering and then went looking for the other half of the job — the interface people actually touch. Now I move between the two: building systems that hold up, and designing screens that make sense.
+          </p>
+          <div class="hero__actions">
+            <a href="assets/img/mascud-cv.pdf" download class="btn btn--solid">Download CV</a>
+            <a href="#work" class="btn btn--ghost">View Work</a>
+          </div>
+          <div class="hero__meta">
+            <div><b>3+</b>Shipped Projects</div>
+            <div><b>2</b>Disciplines, One Practice</div>
+            <div><b>95%</b>Programming Fluency</div>
+          </div>
+        </div>
+
+        <div class="hero__portrait">
+          <div class="tick-frame">
+            <span class="tick-bl"></span><span class="tick-br"></span>
+            <img src="assets/img/hero.jpg" alt="Portrait of Mascud" class="hero__portrait-img" />
+          </div>
+          <span class="hero__tag hero__tag--top"><span class="lit">●</span> Open to work</span>
+          <span class="hero__tag hero__tag--bottom">Based in Istanbul · from Kenya</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about reveal" id="about">
+      <div class="wrap">
+        <div class="about__img">
+          <div class="tick-frame">
+            <span class="tick-bl"></span><span class="tick-br"></span>
+            <img src="assets/img/about.jpg" alt="Mascud, headshot" />
+          </div>
+          <div class="about__stats">
+            <div class="about__stat"><b>Istanbul</b><span>Based In</span></div>
+            <div class="about__stat"><b>Kenya</b><span>Originally From</span></div>
+            <div class="about__stat"><b>Comp. Eng.</b><span>Background</span></div>
+            <div class="about__stat"><b>UI/UX</b><span>Specialty</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow"><span class="num">SEC.01</span> About</div>
+          <h2 class="section__title">An engineer's logic, a designer's eye.</h2>
+          <div class="about__body" style="margin-top:24px;">
+            <p><span class="hl">Computer Engineering graduate</span> with a strong foundation in software development, system optimization, and data analysis — I like taking something slow or fragile and making it efficient.</p>
+            <p>Over the last two years that same instinct pulled me toward <span class="hl">UI/UX and product design</span>, leading design work and a small team along the way. I'm most useful on projects where the engineering and the interface are designed by the same person, so nothing gets lost in translation between the two.</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+            <span class="tag">SQL &amp; NoSQL</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">Cloud Computing</span>
+            <span class="tag">Figma / UI Design</span>
+            <span class="tag">Web &amp; App Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAPABILITIES ===== -->
+    <section class="section capabilities reveal" id="capabilities">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="eyebrow"><span class="num">SEC.02</span> Capabilities</div>
+          <h2 class="section__title">Where the code ends and the interface begins.</h2>
+          <p class="section__lead">Two skill sets, kept in sync — one for what a product does, one for how it feels to use.</p>
+        </div>
+
+        <div class="capabilities__grid">
+          <div class="cap-col cap-col--eng">
+            <h3 class="cap-col__title">// Engineering</h3>
+
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">Programming — Python, Java, C++</span><span class="meter__value">95%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="95"></div></div>
+            </div>
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">Database Management — SQL &amp; NoSQL</span><span class="meter__value">85%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="85"></div></div>
+            </div>
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">Network Security &amp; Cybersecurity</span><span class="meter__value">65%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="65"></div></div>
+            </div>
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">AI &amp; Machine Learning Fundamentals</span><span class="meter__value">85%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="85"></div></div>
+            </div>
+          </div>
+
+          <div class="cap-col cap-col--design">
+            <h3 class="cap-col__title">// Design</h3>
+
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">UI/UX Design</span><span class="meter__value">92%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="92"></div></div>
+            </div>
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">Web Development</span><span class="meter__value">80%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="80"></div></div>
+            </div>
+            <div class="meter">
+              <div class="meter__row"><span class="meter__name">App Design — Android &amp; iOS</span><span class="meter__value">75%</span></div>
+              <div class="meter__track"><div class="meter__fill" data-value="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE & EDUCATION ===== -->
+    <section class="section log reveal" id="experience">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="eyebrow"><span class="num">SEC.03</span> Experience &amp; Education</div>
+          <h2 class="section__title">Where I've worked, and where I trained.</h2>
+        </div>
+
+        <div class="log__grid">
+          <div>
+            <h3 class="log__title">Experience</h3>
+            <div class="log__list">
+              <div class="log__item">
+                <div class="log__date">2024 — 2025</div>
+                <div class="log__role">Team Lead</div>
+                <div class="log__org">StarApp LLC.</div>
+              </div>
+              <div class="log__item">
+                <div class="log__date">2024 — 2025</div>
+                <div class="log__role">UI/UX Design Executive</div>
+                <div class="log__org">Coin Digital Ltd.</div>
+              </div>
+              <div class="log__item">
+                <div class="log__date">2024 — 2025</div>
+                <div class="log__role">UI/UX Design Training</div>
+                <div class="log__org">Üsküdar Institute</div>
+              </div>
+              <div class="log__item">
+                <div class="log__date">2024 — 2025</div>
+                <div class="log__role">Intern</div>
+                <div class="log__org">Askuni Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="log__title">Education</h3>
+            <div class="log__list">
+              <div class="log__item">
+                <div class="log__date">2024</div>
+                <div class="log__role">BBA</div>
+                <div class="log__org">Üsküdar University, Istanbul</div>
+              </div>
+              <div class="log__item">
+                <div class="log__date">2022</div>
+                <div class="log__role">MBA</div>
+                <div class="log__org">Üsküdar University, Istanbul</div>
+              </div>
+              <div class="log__item">
+                <div class="log__date">2021</div>
+                <div class="log__role">UI/UX Design Training</div>
+                <div class="log__org">Üsküdar Institute</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="section work reveal" id="work">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="eyebrow"><span class="num">SEC.04</span> Selected Work</div>
+          <h2 class="section__title">A few things I've designed and shipped.</h2>
+        </div>
+
+        <div class="work__grid">
+          <a href="#" class="work__card">
+            <div class="work__media"><img src="assets/img/work-social.jpg" alt="Social Media App interface" /></div>
+            <div class="work__body">
+              <div class="work__index">01 / Mobile</div>
+              <h3 class="work__name">Social Media App</h3>
+              <p class="work__desc">A mobile app concept connecting creators with people around the world.</p>
+              <span class="work__link">View project <span class="arrow">→</span></span>
+            </div>
+          </a>
+
+          <a href="#" class="work__card">
+            <div class="work__media"><img src="assets/img/work-shopping.jpg" alt="Online Shopping App interface" /></div>
+            <div class="work__body">
+              <div class="work__index">02 / E-commerce</div>
+              <h3 class="work__name">Online Shopping App</h3>
+              <p class="work__desc">A streamlined shopping flow designed to get people from browse to checkout with less friction.</p>
+              <span class="work__link">View project <span class="arrow">→</span></span>
+            </div>
+          </a>
+
+          <a href="#" class="work__card">
+            <div class="work__media"><img src="assets/img/work-quran.jpg" alt="Quran App interface" /></div>
+            <div class="work__body">
+              <div class="work__index">03 / Utility</div>
+              <h3 class="work__name">Quran App</h3>
+              <p class="work__desc">A calm, distraction-free reading app designed for daily use.</p>
+              <span class="work__link">View project <span class="arrow">→</span></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="services__grid">
+          <div class="service">
+            <div class="service__num">01</div>
+            <h3>Web Design</h3>
+            <p>Responsive, accessible websites built on clean, maintainable front-end code.</p>
+          </div>
+          <div class="service">
+            <div class="service__num">02</div>
+            <h3>UI/UX Design</h3>
+            <p>Wireframes and prototypes grounded in how people actually use software, not just how it looks.</p>
+          </div>
+          <div class="service">
+            <div class="service__num">03</div>
+            <h3>App Design</h3>
+            <p>Mobile-first interface design and lightweight builds for Android and iOS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact reveal" id="contact">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow"><span class="num">SEC.05</span> Contact</div>
+          <h2 class="section__title">Let's build something.</h2>
+          <p class="section__lead" style="margin-bottom:8px;">Have a project that needs both an engineer and a designer? I'd like to hear about it.</p>
+
+          <div style="margin-top:32px;">
+            <div class="contact__info-row"><span class="k">Email</span><span class="v">contact@email.com</span></div>
+            <div class="contact__info-row"><span class="k">Phone</span><span class="v">+90 123 456 789</span></div>
+            <div class="contact__info-row"><span class="k">Location</span><span class="v">Istanbul, Türkiye</span></div>
+          </div>
+
+          <div class="contact__socials">
+            <a href="https://facebook.com/" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+
+          <a href="assets/img/mascud-cv.pdf" download class="btn btn--ghost" style="margin-top:32px;">Download CV</a>
+        </div>
+
+        <form name="submit-to-google-sheet" id="contactForm">
+          <div class="form-field">
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="Name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="Email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-field">
+            <label for="fMessage">Message</label>
+            <textarea id="fMessage" name="Message" rows="6" placeholder="Tell me about the project" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--solid">Send message</button>
+          <span class="form-msg" id="formMsg"></span>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Mascud. All rights reserved.</p>
+      <a href="#home" class="footer__back">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
