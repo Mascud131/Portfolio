@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- contact form submit ---- */
   const form = document.getElementById('contactForm');
   const msg = document.getElementById('formMsg');
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxB_WhDaJdAPYgnSIVXioUPNDw1rHsZdAQFV4sh0DtdcjvAYZDRXFmATUypgqmpWhSA5A/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby9zXa9mP0xqRNdV3hoYhbLnh7rtPsVaKbnUAOOHsbfjswXM7kU_QxZKYC1zfxu3uk8/exec';
 
   if (form) {
     form.addEventListener('submit', (e) => {
