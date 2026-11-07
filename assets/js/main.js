@@ -87,8 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       if (msg) msg.textContent = 'Sending…';
       // Apps Script does not return CORS headers, so the browser cannot read
-      // its response. no-cors still allows this FormData POST to be submitted.
-      fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+      // its response. Keep this as a simple URL-encoded cross-origin request.
+      const formData = new FormData(form);
+      // URL-encoded fields are exposed by Apps Script as e.parameter values.
+      fetch(scriptURL, { method: 'POST', body: new URLSearchParams(formData), mode: 'no-cors' })
         .then(() => {
           if (msg) msg.textContent = 'Message submitted — thank you.';
           form.reset();
