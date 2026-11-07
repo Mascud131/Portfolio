@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- hero role swap ---- */
   const roleSwap = document.getElementById('roleSwap');
-  const roles = ['Cybersecurity Graduate Student', 'Computer Engineer'];
+  const roles = ['Cybersecurity MSc Graduate', 'Computer Engineer'];
   let roleIndex = 0;
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (roleSwap && !prefersReducedMotion) {
