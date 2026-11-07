@@ -7,7 +7,7 @@
    ========================================================================== */
 
 :root{
-  --ink:        #0A0F1C;
+  --ink:        #193141;
   --panel:      #111A2C;
   --panel-2:    #16233A;
   --line:       rgba(238,241,247,0.11);
@@ -108,7 +108,7 @@ body{
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(10,15,28,0.82);
+  background: rgba(25,49,65,0.84);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
